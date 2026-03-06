@@ -10,10 +10,8 @@ Dokumen ini berisi panduan langkah demi langkah untuk menguji fitur-fitur utama 
        ```
    *   **Restore Database (via DBeaver):**
        1.  Buka aplikasi **DBeaver** dan koneksikan ke database PostgreSQL (Host: `localhost`, Port: `5432`, Database: `inventory_db`, User: `postgres`, Pass: `postgres`).
-       2.  Klik kanan pada koneksi database tersebut, pilih **SQL Editor** -> **New SQL Script**.
-       3.  Buka file `backend/database/schema.sql` di text editor Anda, lalu **Copy** semua isinya.
-       4.  **Paste** isi file tersebut ke dalam SQL Editor di DBeaver.
-       5.  Jalankan script dengan menekan tombol **Execute SQL Script** (atau shortcut `Alt + X`).
+       2.  Klik kanan pada koneksi database postgres tersebut, pilih **Tools** -> **Execute Script**.
+       3.  Pilih file `backend/database/inventory_db.sql` lalu **Next** maka akan membuat tabel dan lainnya.
 
 2. **Jalankan Backend Service:**
    Buka terminal baru, masuk ke folder backend, dan jalankan aplikasi:
